@@ -1,0 +1,202 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
+
+#questionario {
+	position: relative;
+	width: 100%;
+	max-width: 785px;
+	min-height: 370px;
+	height: fit-content;
+	margin: 0 auto;
+	padding-bottom: 32px;
+	background-color: #3399CC;
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #333;
+}
+
+/* Tela inicial que esconde o questionario e que contém o botão começar */
+#esconde-questionario {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #3399CC;
+	z-index: 1500;
+	top: 0;
+	left: 0;
+}
+
+#instrucoes {
+	margin: 16px 26px;
+	padding: 8px;
+	color: #FFFFFF;
+	font-size: 16px;
+	border-top: 1px solid #FFFFFF;
+	border-bottom: 1px solid #FFFFFF;
+}
+
+#comecar-questionario {
+	width: 98px;
+	height: 104px;
+	margin: 80px auto 0 auto;
+	cursor: pointer;
+}
+
+#feedback {
+	position: absolute;
+	bottom: 26px;
+	;
+	width: 92%;
+	left: 4%;
+	display: none;
+	line-height: 20px;
+	font-weight: bold;
+}
+
+#recomecar {
+	display: none;
+	position: absolute;
+	width: 115px;
+	height: 5px;
+	bottom: 0;
+	right: 0;
+	cursor: pointer;
+	background: url(https://addiemooc38.escolavirtual.gov.br/pluginfile.php/17412/mod_folder/content/0/jogos/bt_recomecar.png?forcedownload=1) no-repeat #FFFFFF;
+	z-index: 10;
+}
+
+@media(max-width: 780px) {
+	#recomecar {
+		bottom: unset;
+	}
+}
+
+/* CSS específico desse questionario */
+#questao {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+#questao-pergunta {
+	width: calc(100% - 64px);
+	max-width: 725px;
+	padding-top: 10px;
+	margin-bottom: 16px;
+	margin: 0 auto;
+	font-size: 18px;
+	color: #FFFFFF;
+}
+
+#questao-opcoes {
+	position: relative;
+	width: calc(100% - 64px);
+	max-width: 690px;
+	color: #3399CC;
+	font-size: 16px;
+	margin: 0 auto;
+}
+
+.questao-opcao {
+	padding: 4px;
+	background-color: #FFFFFF;
+	margin-bottom: 1px;
+}
+
+.clicavel {
+	/* Faz com que as opções que possuam essa classe possam ser clicadas. Ao remover a classe, a opção fica bloqueada para cliques. */
+	cursor: pointer;
+}
+
+.clicavel:hover {
+	background-color: #DBDBDB;
+}
+
+.questao-opcao-selecionado {
+	background-color: #E8E8E8;
+}
+
+#questao-bt-proxima {
+	width: 175px;
+	height: 40px;
+	margin: 0 auto;
+	margin-top: 24px;
+	cursor: pointer;
+	background: url(https://addiemooc38.escolavirtual.gov.br/pluginfile.php/17412/mod_folder/content/0/jogos/bt_proxima_questao.png?forcedownload=1) no-repeat;
+}
+
+#questao-feedback {
+	position: relative;
+	display: none;
+	width: calc(100% - 64px);
+	max-width: 560px;
+	font-size: 14px;
+	padding: 10px;
+	margin: 0 0 0 50px;
+	background-color: #FFFFFF;
+	color: #3399CC;
+}
+
+@media (max-width: 650px) {
+	#questao-feedback {
+		margin: 0 auto;
+	}
+}
+
+.questao-feedback-cantos {
+	position: absolute;
+	width: 11px;
+	height: 11px;
+	background: url(https://addiemooc38.escolavirtual.gov.br/pluginfile.php/17412/mod_folder/content/0/jogos/bg_cantos_arredondados.png?forcedownload=1) no-repeat;
+	background-color: #3399CC;
+}
+
+.questao-feedback-canto-se {
+	background-position: top left;
+	top: 0;
+	left: 0;
+}
+
+.questao-feedback-canto-sd {
+	background-position: top right;
+	top: 0;
+	right: 0;
+}
+
+.questao-feedback-canto-ie {
+	background-position: bottom left;
+	bottom: 0;
+	left: 0;
+}
+
+.questao-feedback-canto-id {
+	background-position: bottom right;
+	bottom: 0;
+	right: 0;
+}
+
+#questao-feedback-seta {
+	position: relative;
+	display: none;
+	width: 0;
+	height: 0;
+	margin: 6px 0 0 64px;
+	border-left: 13px solid transparent;
+	border-right: 13px solid transparent;
+	border-bottom: 13px solid #FFFFFF;
+}
+
+.letra-certa {
+	display: inline-block;
+	background: url(https://addiemooc38.escolavirtual.gov.br/pluginfile.php/17412/mod_folder/content/0/jogos/bg_letra_certa.png?forcedownload=1) no-repeat;
+	width: 22px;
+	height: 22px;
+	line-height: 22px;
+	color: #FFFFFF;
+	text-align: center;
+}

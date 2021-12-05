@@ -1,0 +1,62 @@
+.secao_principal{
+    max-width: 95%;
+}
+
+.saiba-mais,
+.referencias,
+.exemplos,
+.curiosidades{
+    max-width: 520px;
+    padding: 16px;
+    background-color: rgba(87, 148, 104, 0.5);
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+	border-radius: 10px;
+}
+
+.alinhar-esquerda {
+      width: fit-content;
+      float: left;
+      margin: 0 16px;
+
+      @include media-breakpoint-down(xs) {
+        float: none;
+        margin: 0 auto;
+      }
+}
+
+.alinhar-direita {
+      width: fit-content;
+      float: right;
+      margin: 0 16px;
+
+      @include media-breakpoint-down(xs) {
+        float: none;
+        margin: 0 auto;
+    }
+}
+
+.acerto_margem{
+    margin-left: 0.8rem;
+}
+
+.cartao_verde{
+    font-size: 1.5rem;
+    font-family: 'Parisienne', cursive;
+    max-width: 75%;
+    background-color: #C9D5B2;
+    background-image: url("https://addiemooc38.escolavirtual.gov.br/pluginfile.php/17412/mod_folder/content/0/fundo_cartao_verde.PNG?forcedownload=1");
+    background-repeat: repeat;
+    background-size: contain;
+    border-radius: 6px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+}
+
+.titulo_tabela{
+    font-weight: bold;
+    text-align: center;
+}

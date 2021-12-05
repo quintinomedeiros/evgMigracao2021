@@ -1,0 +1,119 @@
+.pagina_modulo{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    width: 99%;
+}
+
+/*Largura do conteúdo branco*/
+
+.ajuste_largura{
+    max-width: 100% !important;
+}
+
+/*Título do Curso*/
+.card-body > div:nth-child(1){
+    display: none !important;
+}
+
+/*Título do capítulo*/
+#region-main > div:nth-child(3) > h2:nth-child(2){
+    display: none !important;
+}
+
+#region-main > div:nth-child(2) > h2:nth-child(2){
+    display: none !important;
+}
+
+/*Fundo dos módulos cinza*/
+
+.fundo_secao{
+    background-color: #9BBBC4;
+    padding: 20px;
+    color: white;
+}
+
+.fundo_secao{
+    background-color: #9BBBC4;
+    padding: 20px;
+    color: white;
+}
+
+
+.fundo_secao_negrito{
+    color: #326F80;
+    font-weight: bolder;
+}
+
+.exemplo{
+    color: #326F80;
+    padding: 1rem 2rem 1rem 2rem;
+    font-style: oblique;
+    font-size: 1.1rem;
+    border: lightgray 1px solid;
+}
+
+.exemplo::before{
+    content: "";
+}
+
+/*Informação de Atualização*/
+.modified{
+    display: none;
+}
+
+.link_branco a{
+    color: white;
+    text-decoration: white;
+}
+
+.citacao {
+    padding: 1.5rem;
+    font-style: oblique;
+    font-size: 1.1rem;
+}
+
+.acerto_margem{
+    margin-left: 0.8rem;
+}
+
+/*Ajustes Botão Início*/
+.botao_inicio{
+    background-color: #9BBBC4;
+    color: white;
+    font-weight: bolder;
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+
+.botao_centro{
+    text-align: center;
+}
+
+/*Botão - Ir para o Topo*/
+#back-to-top{
+    background: #9BBBC4;
+    border: 1px solid #9BBBC4;
+}
+
+/*Módulo Navegação Lições*/
+.activity-navigation{
+    display: none;
+}
+
+/*Tabela resumo lei*/
+.tabela_resumo {
+    padding: 1.5rem;
+    font-style: oblique;
+    font-size: 1.1rem;
+    border-top: 0.5px solid lightgray;
+    border-bottom: 0.5px solid lightgray;
+    max-width: 100%;
+}
+
+.tabela_destaque{
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    font-weight: 800;
+    color: #326F80;
+}

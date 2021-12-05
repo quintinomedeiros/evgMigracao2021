@@ -1,0 +1,123 @@
+body {
+	margin: 0;
+}
+
+#jogo {
+	position: relative;
+	width: 100%;
+	max-width: 785px;
+	min-height: 370px;
+	text-align: center;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+	padding-bottom: 32px;
+	background-color: #3399CC;
+	margin: 0 auto;
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #333;
+}
+
+/* Slots contendo os nomes dos símbolos e onde eles devem ser soltos */
+#simbolos-slots {
+	margin: 0 auto;
+}
+
+/* Lista de imagens dos simbolos */
+#simbolos {
+	margin: 0 0 0 8px;
+}
+
+#simbolos-slots,
+#simbolos {
+	width: calc(100% - 8px);
+	padding: 14px 4px 0 4px;
+	display: flow-root;
+}
+
+/* Simbolos e slots individuais */
+#simbolos-slots div,
+#simbolos div {
+	float: left;
+}
+
+/* CSS para os slots quando um simbolo estiver sendo arrastado sobre um deles */
+#simbolos-slots div.hovered {
+	background-position: bottom center;
+}
+
+#simbolos-slots div {
+	width: 104px;
+	height: 82px;
+	padding: 6px;
+	margin: 10px 6px;
+	background: url(https://www.educacaoadistancia.camara.leg.br/ead_cfd/pluginfile.php/198054/mod_folder/content/0/jogos/simbolos/fundo_slots.png) top center no-repeat;
+}
+
+#simbolos div {
+	width: 52px;
+	height: 52px;
+	padding: 4px 2px 0 2px;
+	margin: 0 8px 0 0;
+	cursor: pointer;
+	background: url(https://www.educacaoadistancia.camara.leg.br/ead_cfd/pluginfile.php/198054/mod_folder/content/0/jogos/simbolos/fundo_simbolos.png);
+}
+
+/* CSS para os simbolos quando um deles estiver sendo arrastado */
+#simbolos div.ui-draggable-dragging {
+	cursor: move;
+}
+
+/* Tela inicial que esconde o jogo e que contém o botão começar */
+#esconde-jogo {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #3399CC;
+	z-index: 1500;
+	top: 0;
+	left: 0;
+}
+
+#instrucoes {
+	margin: 16px 26px;
+	padding: 8px;
+	color: #FFFFFF;
+	font-size: 16px;
+	border-top: 1px solid #FFFFFF;
+	border-bottom: 1px solid #FFFFFF;
+	font-size: 16px;
+	text-align: left;
+}
+
+#comecar-jogo {
+	width: 98px;
+	height: 104px;
+	padding: 10px;
+	margin: 60px auto 0 auto;
+	cursor: pointer;
+}
+
+#feedback {
+	position: absolute;
+	bottom: 26px;
+	;
+	width: 92%;
+	left: 4%;
+	display: none;
+	line-height: 20px;
+	font-weight: bold;
+}
+
+#recomecar {
+	display: none;
+	position: absolute;
+	width: 115px;
+	height: 5px;
+	bottom: 0;
+	right: 0;
+	cursor: pointer;
+	background: url(https://www.educacaoadistancia.camara.leg.br/ead_cfd/pluginfile.php/198054/mod_folder/content/0/jogos/bt_recomecar.png) no-repeat #FFFFFF;
+	z-index: 10;
+}

@@ -1,0 +1,41 @@
+.secao_principal{
+    max-width: 98%;
+}
+
+.saiba-mais,
+.referencias,
+.curiosidades{
+    max-width: 520px;
+    padding: 16px;
+    background-color: rgba(87, 148, 104, 0.5);
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+	border-radius: 10px;
+}
+
+.alinhar-esquerda {
+      width: fit-content;
+      float: left;
+      margin: 0 16px;
+
+      @include media-breakpoint-down(xs) {
+        float: none;
+        margin: 0 auto;
+      }
+}
+
+.alinhar-direita {
+      width: fit-content;
+      float: right;
+      margin: 0 16px;
+
+      @include media-breakpoint-down(xs) {
+        float: none;
+        margin: 0 auto;
+    }
+}
+
+.acerto_margem{
+    margin-left: 0.8rem;
+}

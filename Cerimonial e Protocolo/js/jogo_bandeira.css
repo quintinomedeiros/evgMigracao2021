@@ -1,0 +1,214 @@
+body {
+	margin: 0;
+}
+
+#jogo {
+	position: relative;
+	width: 100%;
+	max-width: 785px;
+	min-height: 370px;
+	height: fit-content;
+	margin: 0 auto;
+	padding-bottom: 32px;
+	background-color: #3399CC;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #333;
+}
+
+/* Tela inicial que esconde o jogo e que contém o botão começar */
+#esconde-jogo {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #3399CC;
+	z-index: 1500;
+	top: 0;
+	left: 0;
+}
+
+#instrucoes {
+	margin: 16px 26px;
+	padding: 8px;
+	color: #FFFFFF;
+	font-size: 16px;
+	border-top: 1px solid #FFFFFF;
+	border-bottom: 1px solid #FFFFFF;
+}
+
+#comecar-jogo {
+	width: 98px;
+	height: 104px;
+	padding: 10px;
+	margin: 74px auto 0 auto;
+	cursor: pointer;
+}
+
+#feedback {
+	position: absolute;
+	bottom: 26px;
+	;
+	width: 92%;
+	left: 4%;
+	display: none;
+	line-height: 20px;
+	font-weight: bold;
+}
+
+#recomecar {
+	display: none;
+	position: absolute;
+	width: 115px;
+	height: 5px;
+	bottom: 0;
+	right: 0;
+	cursor: pointer;
+	background: url(https://addiemooc38.escolavirtual.gov.br/pluginfile.php/17412/mod_folder/content/0/jogos/bt_recomecar.png?forcedownload=1) no-repeat #FFFFFF;
+	z-index: 10;
+}
+
+/* CSS específico desse jogo */
+#questao {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+#questao-texto {
+	width: calc(100% - 64px);
+	max-width: 725px;
+	padding-top: 24px;
+	margin: 0 auto;
+	margin-bottom: 16px;
+	font-size: 18px;
+	color: #FFFFFF;
+}
+
+#questao-imagem-alternativas-container {
+	display: flex;
+	margin: 0 auto;
+	width: calc(100% - 32px);
+	max-width: 700px;
+	align-items: center;
+	justify-content: space-around;
+}
+
+#questao-imagem {
+	width: 212px;
+	height: 212px;
+}
+
+#questoes-bt-vf-feedback {
+	width: 323px;
+	height: 180px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+#questao-v-ou-f-container {
+	display: flex;
+	align-items: center;
+}
+
+.questao-bt-vf {
+	width: 127px;
+	height: 45px;
+	cursor: pointer;
+}
+
+#questao-bt-v {
+	margin-left: 7px;
+	background-image: url(https://addiemooc38.escolavirtual.gov.br/pluginfile.php/17412/mod_folder/content/0/jogos/bt_verdadeiro.png?forcedownload=1);
+}
+
+#questao-bt-f {
+	background-image: url(https://addiemooc38.escolavirtual.gov.br/pluginfile.php/17412/mod_folder/content/0/jogos/bt_falso.png?forcedownload=1);
+}
+
+#questao-bt-v:hover,
+#questao-bt-f:hover,
+.questao-bt-hover {
+	background-position: bottom center;
+}
+
+#questao-bt-vf-ou {
+	float: left;
+	width: 55px;
+	height: 45px;
+	background: url(https://addiemooc38.escolavirtual.gov.br/pluginfile.php/17412/mod_folder/content/0/jogos/ou.png?forcedownload=1) top center no-repeat;
+}
+
+#questao-bt-proxima {
+	width: 175px;
+	height: 40px;
+	background: url(https://addiemooc38.escolavirtual.gov.br/pluginfile.php/17412/mod_folder/content/0/jogos/bt_proxima_questao.png?forcedownload=1) no-repeat;
+	cursor: pointer;
+
+	margin: 0 auto;
+	margin-top: 16px;
+}
+
+#questao-feedback {
+	display: none;
+	width: 273px;
+	height: 64px;
+	padding: 25px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #3399CC;
+	background: url(https://addiemooc38.escolavirtual.gov.br/pluginfile.php/17412/mod_folder/content/0/jogos/bg_feedback.png?forcedownload=1) no-repeat;
+	box-sizing: unset;
+}
+
+@media(max-width: 360px) {
+	#questao-feedback {
+		max-width: 270px;
+		width: 200px;
+		background-size: 100% 100%;
+	}
+}
+
+#questao-seta-baixo {
+	display: none;
+	width: 0;
+	height: 0;
+	margin-bottom: 6px;
+	border-left: 13px solid transparent;
+	border-right: 13px solid transparent;
+	border-top: 13px solid #FFFFFF;
+}
+
+.questao-seta-baixo-v {
+	margin-left: 60px;
+}
+
+.questao-seta-baixo-f {
+	margin-left: 240px;
+}
+
+@media(max-width: 630px) {
+	#questao-imagem-alternativas-container {
+		flex-direction: column;
+	}
+
+	#questao-feedback {
+		margin-top: 16px;
+	}
+
+	#recomecar {
+		top: 0;
+		bottom: unset;
+	}
+}
+
+@media(max-width: 380px) {
+	#questao-bt-vf-ou {
+		display: none;
+	}
+	
+	#questao-bt-v {
+		margin-right: 8px;
+	}
+}

@@ -1,0 +1,37 @@
+.secao_principal{
+    font-size: 1.2rem;
+}
+
+.acerto_margem{
+    margin-left: 0.8rem;
+}
+
+.cartao_verde{
+    font-size: 1.8rem;
+    font-family: 'Parisienne', cursive;
+    max-width: 75%;
+    background-color: #C9D5B2;
+    background-image: url("https://www.educacaoadistancia.camara.leg.br/ead_cfd/pluginfile.php/198054/mod_folder/content/0/fundo_cartao_verde.PNG?forcedownload=1");
+    background-repeat: repeat;
+    background-size: contain;
+    border-radius: 6px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.link_branco a{
+    color: white;
+    text-decoration: white;
+}
+
+.link_cinza a{
+    color: gray;
+    text-decoration: gray;
+}
+
+.citacao {
+    padding: 1.5rem;
+    font-style: oblique;
+    font-size: 1.1rem;
+}
